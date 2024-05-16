@@ -1,0 +1,37 @@
+MyHashTable
+MyHashTable is a simple implementation of a hash table in Java using separate chaining for collision resolution.
+
+Usage
+Initialization
+To create a new instance of MyHashTable, you can use the default constructor or specify the initial capacity:
+
+java
+
+MyHashTable<String, Integer> table = new MyHashTable<>();
+or
+
+java
+
+MyHashTable<String, Integer> table = new MyHashTable<>(100); // Initial capacity of 100
+Insertion
+You can insert key-value pairs into the hash table using the put method:
+
+
+table.put("apple", 5);
+table.put("banana", 8);
+table.put("orange", 3);
+Retrieval
+To retrieve a value associated with a key, you can use the get method:
+
+java
+Копировать код
+Integer value = table.get("banana");
+System.out.println(value); // Output: 8
+Removal
+You can remove a key-value pair from the hash table using the remove method:
+
+java
+table.remove("orange");
+Other Operations
+contains: Checks if a key exists in the hash table.
+getKey: Retrieves the key associated with a specified value.
